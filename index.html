@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cristian 💚 Alejandro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="card" role="main">
+    <p class="tag">Para: <span id="toName"></span></p>
+
+    <h1 id="title">¿Quieres ser mi San Valentín?</h1>
+    <p id="subtitle" class="subtitle"></p>
+
+    <section class="pixel-scene" aria-label="Corazón Minecraft">
+      <!-- IMPORTANTE:
+           Crea una carpeta "img" junto a estos 3 archivos
+           y guarda ahí tu imagen con este nombre exacto:
+           img/minecraft-heart.png
+      -->
+      <img class="mc-heart-img" src="img/minecraft-heart.png" alt="Corazón estilo Minecraft" />
+      <p class="mc-line" id="mcLine"></p>
+    </section>
+
+    <section class="actions" aria-label="Opciones">
+      <button id="yesBtn" class="btn yes">Sí 💚</button>
+      <button id="noBtn" class="btn no">No</button>
+    </section>
+
+    <p class="hint" id="hint"></p>
+    <p class="footer" id="signature"></p>
+  </main>
+
+  <dialog id="yesModal" class="modal">
+    <div class="modal-box">
+      <h2 id="modalTitle">¡Yuju! 💚</h2>
+      <p id="modalText"></p>
+
+      <div class="details" id="details"></div>
+
+      <div class="modal-actions">
+        <a id="waLink" class="btn yes" target="_blank" rel="noopener">Confirmar por WhatsApp</a>
+        <button id="closeModal" class="btn no">Cerrar</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
